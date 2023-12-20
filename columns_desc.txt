@@ -1,0 +1,14 @@
+1 UNHHIDNP UNHHIDNP: Unique Person Identifier (HH ID + Person Number)/ Cont
+1 RAHHIDNP RAHHIDNP: Unique Person Identifier (HH ID + Person Number)/ Char
+
+1 R1AGEY r1agey: w1 R Age (years) at ivw Cont
+2 R2AGEY r2agey: w2 R Age (years) at ivw Cont
+3 R3AGEY r3agey: w3 R Age (years) at ivw Cont
+4 R4AGEY r4agey: w4 R Age (years) at ivw Cont
+5 R5AGEY r5agey: w5 R Age (years) at ivw Cont
+
+1 RAGENDER ragender: R Gender Categ
+2 R2GENDERF r2genderf: w2 R Gender Report Update Flag Categ
+3 R3GENDERF r3genderf: w3 R Gender Report Update Flag Categ
+4 R4GENDERF r4genderf: w4 R Gender Report Update Flag Categ
+5 R5GENDERF r5genderf: w5 R Gender Report Update Flag Categ
