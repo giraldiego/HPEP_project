@@ -1,5 +1,10 @@
+Wave Variable Label Type
+
 1 UNHHIDNP UNHHIDNP: Unique Person Identifier (HH ID + Person Number)/ Cont
-1 RAHHIDNP RAHHIDNP: Unique Person Identifier (HH ID + Person Number)/ Char
+<!-- 1 RAHHIDNP RAHHIDNP: Unique Person Identifier (HH ID + Person Number)/ Char -->
+
+1 RABYEAR rabyear: R Birth Year Cont
+1 RABMONTH rabmonth: R Birth Month Cont
 
 1 R1AGEY r1agey: w1 R Age (years) at ivw Cont
 2 R2AGEY r2agey: w2 R Age (years) at ivw Cont
@@ -8,7 +13,24 @@
 5 R5AGEY r5agey: w5 R Age (years) at ivw Cont
 
 1 RAGENDER ragender: R Gender Categ
-2 R2GENDERF r2genderf: w2 R Gender Report Update Flag Categ
+<!-- 2 R2GENDERF r2genderf: w2 R Gender Report Update Flag Categ
 3 R3GENDERF r3genderf: w3 R Gender Report Update Flag Categ
 4 R4GENDERF r4genderf: w4 R Gender Report Update Flag Categ
-5 R5GENDERF r5genderf: w5 R Gender Report Update Flag Categ
+5 R5GENDERF r5genderf: w5 R Gender Report Update Flag Categ -->
+
+1 H1RURAL h1rural: w1 lives in rural or urban Categ
+3 H3RURAL h3rural: w3 lives in rural or urban Categ
+4 H4RURAL h4rural: w4 lives in rural or urban Categ
+5 H5RURAL h5rural: w5 lives in rural or urban Categ
+
+1 R1SHLT r1shlt: w1 R Self-report of health Categ
+2 R2SHLT r2shlt: w2 R Self-report of health Categ
+3 R3SHLT r3shlt: w3 R Self-report of health Categ
+4 R4SHLT r4shlt: w4 R Self-report of health Categ
+5 R5SHLT r5shlt: w5 R Self-report of health Categ
+
+1 R1HLTC r1hltc: w1 R Self-report of health change Categ
+2 R2HLTC r2hltc: w2 R Self-report of health change Categ
+3 R3HLTC r3hltc: w3 R Self-report of health change Categ
+4 R4HLTC r4hltc: w4 R Self-report of health change Categ
+5 R5HLTC r5hltc: w5 R Self-report of health change Categ
