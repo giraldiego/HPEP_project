@@ -1,25 +1,25 @@
 import pickle
 from flask import Flask, request, jsonify
 
-input_file = "model_C=1.0.bin"
+input_file = "hospitalization-logistic_model.bin"
 
 with open(input_file, "rb") as f_in:
     dv, model = pickle.load(f_in)
 
-app = Flask("churn")
+app = Flask("hospitalization")
 
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    customer = request.get_json()
+    patient = request.get_json()
 
-    X = dv.transform([customer])
+    X = dv.transform([patient])
     y_pred = model.predict_proba(X)[0, 1]
-    churn = y_pred >= 0.5
+    hospitalization = y_pred >= 0.5
 
     result = {
-        "churn_probability" : float(y_pred),
-        "churn" : bool(churn)
+        "hospitalization_probability" : float(y_pred),
+        "hospitalization" : bool(hospitalization)
     }
 
     return jsonify(result)
