@@ -56,10 +56,14 @@ def predict():
     revive_nan(patient)
     y_pred, hospitalization = predict_single_patient(patient, transformers)
 
+    print("prediction successful!")
+
     result = {
         "hospitalization_probability": float(y_pred),
         "hospitalization": bool(hospitalization),
     }
+
+    print(result)
 
     return jsonify(result)
 
