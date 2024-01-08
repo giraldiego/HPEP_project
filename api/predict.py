@@ -49,16 +49,12 @@ app = Flask("hospitalization")
 def predict():
     patient_json = request.get_json()
 
-    print(patient_json)
+    # print(patient_json)
 
     patient = dict(patient_json)
 
     revive_nan(patient)
     y_pred, hospitalization = predict_single_patient(patient, transformers)
-
-    # X = dv.transform([patient])
-    # y_pred = model.predict_proba(X)[0, 1]
-    # hospitalization = y_pred >= 0.5
 
     result = {
         "hospitalization_probability": float(y_pred),
